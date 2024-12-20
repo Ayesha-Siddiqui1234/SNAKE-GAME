@@ -9,9 +9,6 @@ body {
     background-attachment: fixed;
     margin: 0;
     padding: 0;
-
-   
-    
 }
 
 #gameContainer {
@@ -73,27 +70,28 @@ body {
     height: auto;
 }
 
-/* Responsive styling */
-@media (max-width: 600px) {
-    #gameCanvas {
-        width: 400%; /* Full width on small screens */
-    }
 
+@media (max-width: 600px) {
     .control-btn {
         width: 40px;
-        height: 40px;
-        font-size: 14px;
+        height: 50px;
+        font-size: 16px;
+    }
+
+    #controls {
+        gap: 6px;
     }
 
     #gameContainer {
-        grid-template-columns: 1fr;
-        text-align: center;
+        padding: 10px;
     }
 
-    #directional-controls {
-        flex-direction: row;
-        justify-content: center;
-        gap: 5px;
+    #gameCanvas {
+        border: 2px solid #000;
+        background-color: rgba(122, 234, 157, 0.8);
+        width: auto;
+        max-width: auto;
+        height: 100%;
     }
 }
 
@@ -128,3 +126,7 @@ body {
         padding: 20px;
     }
 }
+
+
+
+
